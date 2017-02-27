@@ -1,0 +1,11 @@
+---
+- hosts: gcp
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: clippi
+  tasks:
+  - name: push index.html file to gcp
+    copy: src=/mnt/c/Users/CHRIS/Documents/GitHub/WithinReach/index.html dest=/opt/bitnami/nginx/html    
+    become: yes
+    become_method: sudo
