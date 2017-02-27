@@ -1,5 +1,5 @@
 # WithinReach
 website for WithinReach blog
-playing around with stuff
-more stuff
-#putting some stuff in here for foobar
+
+# Deployment step - run the following in the shell
+ansible-playbook /mnt/c/Users/CHRIS/Documents/GitHub/WithinReach/deployment/gcp_deploy.yml -f 10
